@@ -1,0 +1,30 @@
+@import '_vars';
+
+
+@mixin max($size) {
+    @if map-has-key($breakpoints-max, $size) {
+      @media (max-width: #{map-get($breakpoints-max, $size)}) {
+        @content;
+      }
+    }
+  
+    @else {
+      @media (max-width: #{$size}px) {
+        @content;
+      }
+    }
+  }
+  
+  @mixin min($size) {
+    @if map-has-key($breakpoints-min, $size) {
+      @media (min-width: #{map-get($breakpoints-min, $size)}) {
+        @content;
+      }
+    }
+  
+    @else {
+      @media (min-width: #{$size}px) {
+        @content;
+      }
+    }
+  }

@@ -1,0 +1,37 @@
+@use '../vars' as *;
+
+.modal-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal-hero__card {
+    background-color: $c-white;
+    color: $c-dark;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.modal-hero__image-wrapper {
+    margin-bottom: 20px;
+}
+
+.modal-hero__info-label {
+    font-weight: 400;
+    font-size: 14px;
+}
+.modal-hero__info-field {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}

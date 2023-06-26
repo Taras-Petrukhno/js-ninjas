@@ -1,0 +1,44 @@
+@import '../vars';
+
+.input-text {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: $c-white; //for all background: inherit; in style component
+}
+    
+
+.input-text__input {
+    border: 1px solid #D0CFCF;
+    border-radius: 4px;
+    padding: 14px 16px;
+    width: 100%;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    outline:none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+// Show placeholder
+.input-text__input:focus ~ .input-text__placeholder {
+    display: none;
+}
+
+.input-text__input:not(:placeholder-shown) ~ .input-text__placeholder{
+    display: none;
+}
+
+
+.input-text__placeholder {
+    position: absolute;
+    left: 16px;
+    color: #7E7E7E;
+    z-index: 0;
+}

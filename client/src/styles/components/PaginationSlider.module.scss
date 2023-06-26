@@ -1,0 +1,31 @@
+@import '../_mixins';
+@import '../_vars';
+@import '../_reset';
+
+.pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 20px
+}
+.pagination__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $c-dark;
+    background-color: $c-white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.pagination__item_active {
+    opacity: 1;
+}
+

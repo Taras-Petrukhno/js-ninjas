@@ -1,0 +1,60 @@
+@use '../vars' as *;
+
+.superhero-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+}
+
+.superhero-item__info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.superhero-item__image-wrapper {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 150px;
+    width: 100%;
+    max-width: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+   
+}
+
+.superhero-item__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.superhero-item__nickname {
+    flex-shrink: 0;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.superhero-item__controller {
+    display: flex;
+    flex-direction: column;
+    
+    width: 200px;
+    gap: 15px
+}
+
+.superhero-item__btn {
+    border: 1px solid $c-dark;
+    background-color: transparent;
+    color: $c-white;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}

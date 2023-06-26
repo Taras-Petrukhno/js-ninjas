@@ -1,0 +1,38 @@
+// Breakpoints
+
+$breakpoints-min: (// for mobile first
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px // from 1400 to infinity
+);
+
+$breakpoints-max: (// for desktop first
+    xs: 575.98px,
+    sm: 767.98px,
+    md: 991.98px,
+    lg: 1199.98px,
+    xl: 1399.98px, // before 1400
+);
+// Colors
+
+$c-white: #FFFFFF;
+$c-dark: #262C27;
+$c-swamp: #B9C400;
+$c-water: #0093A1;
+
+// Sizes
+
+$container: 600px; //add 30px to container
+$container-padding: 15px;
+
+// main values for body
+
+$m-font-size: 18px;
+$m-line-height: 22px;
+$m-font-family: Arial, Helvetica, sans-serif;;
+$m-font-weight: 400;
+$m-color: $c-white;
+$m-bg-color: $c-water;
